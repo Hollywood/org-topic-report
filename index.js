@@ -19,7 +19,7 @@ async function getTopicData() {
 
     //Get List of Repos and their sizes
     topics = [].concat.apply([], 
-        (await github.paginate(await github.repos.listForOrg({org: 'Albatoss'}))).map(n => n.data.map((n) => n.topics)))
+        (await github.paginate(await github.repos.listForOrg({org: `${process.env.orgName}`))).map(n => n.data.map((n) => n.topics)))
     
     results = new Counter([].concat(...topics));
     for (let [topic, times] of results.entries())
