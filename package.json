@@ -1,0 +1,22 @@
+{
+  "name": "org-topic-report",
+  "version": "1.0.0",
+  "description": "Creates a CSV of all org topics and the number of instances of them.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "org-topic-report"
+  },
+  "author": "Jonathan Cardona",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^16.16.4",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "fetch": "^1.1.0",
+    "json2csv": "^4.3.5"
+  }
+}
